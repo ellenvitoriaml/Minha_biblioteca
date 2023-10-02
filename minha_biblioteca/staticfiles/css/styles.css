@@ -1,0 +1,87 @@
+body, h1, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f5e5d7; /* Tons outonais */
+    font-family: "Georgia", serif; /* Fonte inspirada na série Gilmore Girls */
+}
+
+header {
+    background-color: #793e0f; /* Tons outonais */
+    color: #fff;
+    padding: 20px;
+    text-align: center; /* Centralizar o conteúdo do header */
+    position: relative; /* Adicionar posição relativa para posicionar os botões */
+}
+
+.logo {
+    width: 100px; /* Tamanho da logo */
+    float: left; /* Alinhar a logo à esquerda */
+    margin-right: 20px; /* Espaço entre a logo e o texto */
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px; /* Espaço entre o h1 e o p */
+}
+
+header p {
+    font-size: 18px;
+}
+
+main {
+    margin: 20px;
+    text-align: center; /* Centralizar o conteúdo do main */
+}
+
+.info {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.info h2 {
+    font-size: 24px;
+}
+
+.info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.info li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    text-align: right; /* Alinhar os botões à direita */
+    margin-top: 20px;
+    position: absolute; /* Posição absoluta para os botões */
+    top: 20px; /* Distância do topo */
+    right: 20px; /* Distância da direita */
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d35400; /* Cor de fundo dos botões */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 10px; /* Espaço entre os botões */
+    font-size: 18px;
+    transition: background-color 0.3s ease; /* Adicionar transição suave */
+}
+
+.btn:hover {
+    background-color: #a04000; /* Cor de destaque no hover */
+}
+
+.btn:first-child {
+    margin-left: 0; /* Remover o espaço à esquerda do primeiro botão */
+}

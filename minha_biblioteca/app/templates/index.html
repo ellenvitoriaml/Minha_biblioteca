@@ -1,0 +1,37 @@
+{%load static%}
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <title>Minha Biblioteca</title>
+</head>
+<body>
+    <header>
+        <img src="{%static 'imagens/Logo.png' %}" alt="Logo" class="logo">
+        <h1>Minha Biblioteca</h1>
+        <p>Compartilhe suas leituras favoritas!</p>
+        <section class="buttons">
+            <a href="login/" class="btn">Login</a>
+            <a href="registrar_usuario/" class="btn">Cadastro</a>
+        </section>
+    </header>
+    <main>
+        <section class="info">
+            <h2>O que você pode fazer na nossa rede:</h2>
+            <ul>
+                <li>Adicionar e gerenciar seus livros</li>
+                <li>Compartilhar recomendações de leitura</li>
+                <li>Conectar-se com outros amantes de livros</li>
+            </ul>
+        </section>
+        
+    </main>
+    <footer>
+        <p>&copy; 2023 Ellen Vitória Menezes Lima</p>
+    </footer>
+    <script src={% static 'js/script.js' %}></script>
+</body>
+</html>

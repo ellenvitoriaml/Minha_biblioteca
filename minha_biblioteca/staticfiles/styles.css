@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f2ed; /* Cor de fundo outonal */
+    color: #333; /* Cor de texto padrão */
+}
+
+/* ... estilos para o cabeçalho e o rodapé ... */
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.menu {
+    display: block;
+    width: 250px;
+    background-color: #fff; /* Fundo do menu */
+    position: fixed;
+    top: 0;
+    left: -250px;
+    height: 100%;
+    transition: 0.4s;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    padding: 15px;
+}
+
+.menu a {
+    color: #333; /* Cor do texto do menu */
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu.show {
+    left: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .menu {
+        width: 100%;
+        left: -100%;
+    }
+}

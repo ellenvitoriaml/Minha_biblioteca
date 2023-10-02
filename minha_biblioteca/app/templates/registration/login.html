@@ -1,0 +1,27 @@
+{%load static%}
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+    <title>Login - Minha Biblioteca</title>
+</head>
+<body>
+    <div class="login-container">
+        <img src="{% static 'imagens/Logo.png' %}" alt="Logo" class="logo">
+        <h1>Login</h1>
+        <form class="login-form">
+            <input type="text" placeholder="Usuário" required>
+            <input type="password" placeholder="Senha" required>
+            <button class="btn-login">Login</button>
+        </form>
+        <div class="links">
+            <a href="#">Esqueci a senha</a>
+            <span>ou</span>
+            <a href="/registrar_usuario/">Cadastre-se</a>
+        </div>
+    </div>
+</body>
+</html>

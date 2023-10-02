@@ -1,0 +1,43 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/cadastro.css' %}">
+    <title>Cadastro - Minha Biblioteca</title>
+</head>
+<body>
+    <div class="cadastro-container">
+        <img src="{% static 'imagens/Logo.png' %}" alt="Logo" class="logo">
+        <h1>Cadastro</h1>
+        <form class="cadastro-form">
+            <div class="campo">
+                <input type="text" placeholder="Nome Completo" required>
+                <i class="fas fa-user"></i>
+            </div>
+            <div class="campo">
+                <input type="text" placeholder="Nickname" required>
+                <i class="fas fa-user-circle"></i>
+            </div>
+            <div class="campo">
+                <input type="email" placeholder="Email" required>
+                <i class="fas fa-envelope"></i>
+            </div>
+            <div class="campo">
+                <input type="password" placeholder="Senha" required>
+                <i class="fas fa-lock"></i>
+            </div>
+            <div class="campo">
+                <input type="password" placeholder="Confirmar Senha" required>
+                <i class="fas fa-lock"></i>
+            </div>
+            <button class="btn-cadastro">Cadastrar</button>
+        </form>
+        <div class="links">
+          <a href="/login/">Login</a>
+        </div>
+    </div>
+</body>
+</html>
